@@ -1,0 +1,170 @@
+@media screen and (max-width: 1024px){
+	.nav-toggle-btn {
+        display: flex;
+    }
+    .menu-visible .nav-toggle-btn .btn-inner {
+        border-color: transparent;
+    }
+    .menu-visible .nav-toggle-btn .btn-inner:before {
+        transform: rotate(45deg);
+        top: 0;
+        transition: all .5s ease;
+    }
+    .menu-visible .nav-toggle-btn .btn-inner:after {
+        transform: rotate(-45deg);
+        top: 0;
+        transition: all .5s ease;
+    }
+    .nav-items-wrap .nav-item-list {
+        flex-direction: column;
+        position: fixed;
+        right: -400px;
+        top: 115px;
+        padding-top: 30px;
+        display: block;
+        width: 300px;
+        height: 100vh;
+        background: #ffffff;
+        align-items: flex-start;
+        z-index: 99;
+        overflow: hidden;
+        transition: all .5s ease;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .menu-visible .nav-item-list {
+        right: 0;
+        transition: all .5s ease;
+    }
+
+    .nav-list-item {
+	    height: auto;
+	    display: block;
+	    border-bottom: 1px solid #f4f4f4;
+	}
+
+	.nav-item-link {
+	    color: #000;
+	    display: block;
+	    padding: 10px 20px;
+	}
+
+	.nav-item-submenu {
+	    position: unset!important;
+	    padding: 0;
+	    opacity: 1;
+	    visibility: visible;
+	    width: auto;
+	    padding-left: 15px;
+	}
+
+	.fixed-header .nav-item-list {
+	    top: 70px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.slider-content-outer .slider-content h2 {
+		font-size: 25px;
+	}
+	.slider-content-outer .slider-content h1 {
+		font-size: 45px;
+	}
+	.section-title-wrap .title {
+		font-size: 30px;
+	}
+	.transport-skill-right {
+		margin-top: 30px;
+	}
+	.blog-item-info-title {
+		font-size: 22px;
+	}
+	.footer-item-wrapper {
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.slider-item {
+		height: auto;
+	}
+	.slider-content-outer .slider-content h2 {
+		font-size: 18px;
+	}
+	.slider-content-outer .slider-content h1 {
+		font-size: 30px;
+	}
+	.testimonial-info .text {
+		font-size: 16px;
+	}
+	.section-title-wrap .title {
+		font-size: 25px;
+	}
+	.contact-info-icon {
+		padding: 15px 20px;
+	}
+	.billing-details-form-outer {
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 567px) {
+	.transport-skill-progress-wrap {
+		display: block;
+	}
+	.transport-skill-progress-item {
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+	.transport-skill-progress-item .progress {
+		margin: auto;
+	}
+	.transport-skill-progress-item:nth-child(even) {
+		margin-right: 0;
+	}
+	.slider-item {
+		height: 350px;
+	}
+	.header-top-wrap {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.order-tracking-items-outer {
+		display: block;
+		text-align: center;
+	}	
+	.order-tracking {
+		margin: 20px auto;
+		display: inline-block;
+		width: 100%;
+	}	
+	.order-tracking::before {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.slider-content-outer .slider-content h2 {
+		font-size: 14px;
+	}
+	.slider-content-outer .slider-content h1 {
+		font-size: 22px;
+	}
+	.service-item-title {
+		font-size: 18px;
+	}
+	.transport-skill-right .title {
+		font-size: 25px;
+	}
+	.order-tracking-wrapper .tracking-form .input-group button {
+		padding: 0 10px;
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 360px){
+	.transport-skill-progress-item {
+		display: block;
+	}
+}
